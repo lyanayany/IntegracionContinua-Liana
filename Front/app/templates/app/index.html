@@ -1,0 +1,32 @@
+{% extends "app/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+<section class="projects-section bg-light" id="projects">
+    <div class="container" id="types" style="padding-bottom: 20px;">
+        <ul class="nav nav-pills" id="itemTypes">
+            <li role="presentation" class="active" title="Todos" id="all"><a>Todos</a></li>
+        </ul>
+    </div>
+    <div class="container" id="products">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+                    src="{% static 'app/assets/img/tayrona.jpg' %}" alt="" /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Parque Nacional Natural Tayrona - MAGDALENA</h4>
+                    <p class="text-black-50 mb-0">El Parque Tayrona simplemente posee una de las mejores rutas de
+                        trekking en Colombia, porque en cada caminata puedes llegar a playas de arena blanca y aguas
+                        cristalinas, manglares, rocas milenarias y junglas de árboles gigantescos donde puedes ver monos
+                        y cientos de aves.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'app/js/scripts.js' %}"></script>
+<script src="{% static 'app/js/app.js' %}"></script>
+{% endblock %}
